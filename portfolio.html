@@ -22,33 +22,45 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container header-content">
-        <a class="logo" href="./index.html">Web<span class="light">Studio</span></a>
+    <header class="page-header">
+      <div class="container page-header__container">
+        <a class="logo" href="./index.html"
+          >Web<span class="logo__light-theme-text">Studio</span></a
+        >
 
-        <nav class="header-nav">
+        <nav class="page-header__nav">
           <ul class="nav-list list">
-            <li class="item"><a class="link" href="./index.html">Студия</a></li>
-            <li class="item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
-            <li class="item"><a class="link" href="">Контакты</a></li>
+            <li class="nav-list__item">
+              <a class="link page-header__link nav-list__link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-list__item">
+              <a
+                class="link page-header__link nav-list__link nav-list__link--current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a class="link page-header__link nav-list__link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
 
-        <ul class="list header-address">
-          <li class="item">
-            <a class="link" href="mailto:info@devstudio.com">
-              <svg class="icon" width="16" height="12">
+        <ul class="address-list list">
+          <li class="address-list__item">
+            <a class="link address-list__link page-header__link" href="mailto:info@devstudio.com">
+              <svg class="icon address-list__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use></svg
               >info@devstudio.com
             </a>
           </li>
 
-          <li class="item">
-            <a class="link" href="tel:+380961111111">
-              <svg class="icon" width="10" height="16">
+          <li class="address-list__item">
+            <a class="link address-list__link page-header__link" href="tel:+380961111111">
+              <svg class="icon address-list__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use></svg
               >+38 096 111 11 11
             </a>
@@ -66,19 +78,27 @@
           <!-- Portfolio filter -->
           <ul class="portfolio-filter-list list">
             <li class="item">
-              <button class="portfolio-button btn btn-primary" type="button">Все</button>
+              <button class="portfolio-button button button--primary" type="button">Все</button>
             </li>
             <li class="item">
-              <button class="portfolio-button btn btn-secondary" type="button">Веб-сайты</button>
+              <button class="portfolio-button button button--secondary" type="button">
+                Веб-сайты
+              </button>
             </li>
             <li class="item">
-              <button class="portfolio-button btn btn-secondary" type="button">Приложения</button>
+              <button class="portfolio-button button button--secondary" type="button">
+                Приложения
+              </button>
             </li>
             <li class="item">
-              <button class="portfolio-button btn btn-secondary" type="button">Дизайн</button>
+              <button class="portfolio-button button button--secondary" type="button">
+                Дизайн
+              </button>
             </li>
             <li class="item">
-              <button class="portfolio-button btn btn-secondary" type="button">Маркетинг</button>
+              <button class="portfolio-button button button--secondary" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
@@ -317,7 +337,7 @@
       <div class="container">
         <!-- Address -->
         <div class="address-wrapper">
-          <a class="logo" href="./">Web<span class="dark">Studio</span></a>
+          <a class="logo" href="./">Web<span class="logo__dark-theme-text">Studio</span></a>
           <address class="footer-address">
             <ul class="footer-address-list list">
               <li><p class="footer-address-text">г. Киев, пр-т Леси Украинки, 26</p></li>
@@ -387,7 +407,7 @@
               name="subscribe-email"
               placeholder="E-mail"
             />
-            <button class="footer-form-submit btn btn-primary" type="submit">
+            <button class="footer-form-submit button button--primary" type="submit">
               Подписаться
               <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#send-email"></use>

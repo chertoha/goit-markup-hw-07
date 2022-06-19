@@ -1,0 +1,36 @@
+.socials {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.socials__item {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.socials__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: map-get($color, 'default-icon');
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: map-get($color, 'accent');
+        color: map-get($color, 'secondary-light');
+    }
+
+    &--dark-theme {
+        color: map-get($color, 'secondary-light');
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}

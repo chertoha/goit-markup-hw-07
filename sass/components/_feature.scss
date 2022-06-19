@@ -1,0 +1,35 @@
+.feature__list {
+    display: flex;
+}
+
+.feature__item {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.feature__icon {
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature__title {
+    color: map-get($color, 'primary-header');
+    font-size: inherit;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.feature__description {
+    margin-top: 10px;
+    line-height: 1.71;
+}
