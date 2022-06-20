@@ -39,6 +39,5 @@
     line-height: 1.875;
     letter-spacing: 0.06em;
 
-    display: flex;
-    align-items: center;
+    @extend %flex-center;
 }

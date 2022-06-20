@@ -30,12 +30,9 @@
 }
 
 .nav-list__item {
-    margin-right: 50px;
-
-    &:last-child {
-        margin-right: 0;
-    }
+    @include set-margin-to-items(right, 50px);
 }
+
 
 .nav-list__link {
     position: relative;
@@ -71,11 +68,7 @@
 }
 
 .address-list__item {
-    margin-right: 50px;
-
-    &:last-child {
-        margin-right: 0;
-    }
+    @include set-margin-to-items(right, 50px);
 }
 
 .address-list__link {

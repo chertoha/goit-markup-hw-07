@@ -1,4 +1,6 @@
 @import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
 @import './components/base';
 @import './components/common/visually-hidden';
 @import './components/common/container';
@@ -24,116 +26,5 @@
 @import './components/common/backdrop';
 @import './components/common/user-form';
 @import './components/common/user-agreement';
-
-
-
-
-
-/* Portfolio */
-
-.portfolio-filter-list {
-    margin-bottom: 50px;
-
-    display: flex;
-    justify-content: center;
-}
-
-.portfolio-filter-list .item+.item {
-    margin-left: 8px;
-}
-
-.portfolio-button {
-    padding: 6px 22px;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.62;
-
-    transition: box-shadow $default-transition-duration $default-transition-timing-function;
-}
-
-.portfolio-button:hover {
-    // background-color: map-get($color, 'accent');
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.portfolio-list {
-    margin-top: -30px;
-    margin-left: -30px;
-
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.portfolio-list .item {
-    margin-top: 30px;
-    margin-left: 30px;
-    background-color: map-get($color, 'secondary-light');
-}
-
-.portfolio-list .link {
-    display: block;
-}
-
-.portfolio-list .link:hover,
-.portfolio-list .link:focus {
-    color: inherit;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio-list-img {
-    display: block;
-}
-
-.portfolio-thumb {
-    position: relative;
-    overflow: hidden;
-}
-
-.portfolio-thumb>.overlay {
-    padding-left: 24px;
-    padding-right: 24px;
-    color: map-get($color, 'secondary-light');
-    font-size: 18px;
-    line-height: 1.555;
-
-    display: flex;
-    align-items: center;
-
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    transition: transform $default-transition-duration $default-transition-timing-function;
-    background: rgba(33, 150, 243, 0.9);
-}
-
-.portfolio-list .link:hover .overlay,
-.portfolio-list .link:focus .overlay {
-    transform: translateY(-100%);
-}
-
-.porfolio-link-content {
-    padding: 20px 24px;
-    border-right: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
-    border-left: 1px solid #eeeeee;
-}
-
-.portfolio-list-title {
-    color: map-get($color, 'primary-header');
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-
-.portfolio-list-text {
-    margin-top: 4px;
-    font-size: 16px;
-    line-height: 1.88;
-}
+@import './components/common/filter';
+@import './components/common/card-set';

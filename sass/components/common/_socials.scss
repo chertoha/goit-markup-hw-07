@@ -1,16 +1,18 @@
 .socials {
     margin-top: 16px;
-    display: flex;
-    justify-content: center;
+
+    @extend %flex-center;
 }
 
 
 .socials__item {
-    margin-right: 10px;
+    // margin-right: 10px;
 
-    &:last-child {
-        margin-right: 0;
-    }
+    // &:last-child {
+    //     margin-right: 0;
+    // }
+
+    @include set-margin-to-items(right, 10px);
 }
 
 
@@ -20,9 +22,7 @@
     border-radius: 50%;
     color: map-get($color, 'default-icon');
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
 
     &:hover {
         background-color: map-get($color, 'accent');

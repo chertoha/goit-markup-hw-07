@@ -3,11 +3,7 @@
 }
 
 .feature__item {
-    margin-right: 30px;
-
-    &:last-child {
-        margin-right: 0;
-    }
+    @include set-margin-to-items(right, 30px);
 }
 
 .feature__icon {
@@ -16,9 +12,7 @@
     background-color: #f5f4fa;
     border-radius: 4px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
 }
 
 .feature__title {

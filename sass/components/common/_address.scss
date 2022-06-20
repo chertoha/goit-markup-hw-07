@@ -4,11 +4,7 @@
 }
 
 .address__item {
-    margin-bottom: 9px;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
+    @include set-margin-to-items(bottom, 9px);
 }
 
 .address__value,

@@ -1,7 +1,7 @@
 .user-agreement {
     margin-top: 20px;
-    display: flex;
-    justify-content: center;
+
+    @extend %flex-center;
 }
 
 .user-agreement__label {
