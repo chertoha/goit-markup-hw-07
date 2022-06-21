@@ -89,10 +89,10 @@ ul {
   background-color: #f5f4fa;
 }
 
-.button__icon--prepend {
+.button__icon-prepend {
   margin-right: 10px;
 }
-.button__icon--append {
+.button__icon-append {
   margin-left: 10px;
 }
 
@@ -477,7 +477,7 @@ ul {
   line-height: 1.17;
 }
 
-.footer__subscribe-form {
+.page-footer__subscribe-form {
   margin-left: 93px;
 }
 
